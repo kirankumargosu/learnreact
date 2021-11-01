@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import AboutMe from './Components/AboutMe'
 import App from './App'
+import AppProduct from './AppProduct'
 
 function FnMakeList()
 {
@@ -45,7 +46,7 @@ class Ticker extends React.Component
 //ReactDOM.render(<MakeList />, document.getElementById('root'));
 //ReactDOM.render(<FnMakeList />, document.getElementById('root'));
 //ReactDOM.render(<AboutMe />, document.getElementById('root'));
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AppProduct />, document.getElementById('root'));
 
 function tick() 
 {

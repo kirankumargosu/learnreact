@@ -5,7 +5,7 @@ import MainContent from "./components/MainContent";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
 import Joke from "./components/Joke";
-import JokesData from "./components/JokesData";
+import JokesData from "./data/JokesData";
 
 function App()
 {

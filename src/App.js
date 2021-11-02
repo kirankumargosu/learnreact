@@ -1,10 +1,10 @@
 import React from "react";
 
-import Header from "./components/Header";
-import MainContent from "./components/MainContent";
-import AboutMe from "./components/AboutMe";
-import Footer from "./components/Footer";
-import Joke from "./components/Joke";
+import Header from "./views/Header";
+import MainContent from "./views/MainContent";
+import AboutMe from "./views/AboutMe";
+import Footer from "./views/Footer";
+import Joke from "./views/Joke";
 import JokesData from "./data/JokesData";
 
 function App()

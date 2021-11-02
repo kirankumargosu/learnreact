@@ -1,20 +1,70 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 0px;
+  background-color: whitesmoke;
 }
 
-.todo-item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 30px 20px 0;
-  width: 70%;
-  border-bottom: 1px solid #cecece;
-  font-family: Roboto, sans-serif;
-  font-weight: 100;
-  font-size: 15px;
-  color: #333333;
+.counter {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40%;
+  margin-right: 40%;
+  text-align: center;
+  background-color: rgb(68, 106, 124);
+
 }
+.counterNumber {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: azure;
+  font-size: 90px;
+  text-align: center;
+  background-color: rgb(68, 106, 124);
+}
+
+.upButton{
+  display:inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  background-color: rgb(228, 118, 74);
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.upButton:hover{
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.downButton{
+  display:inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin:0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  background-color: rgb(228, 118, 74);
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.downButton:hover{
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 
 .headerBar {
   height: 100px;
@@ -40,58 +90,46 @@ body {
   align-items: center;
 }
 
-
-ol, ul {
-  padding-left: 30px;
-}
-
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  margin-bottom: 30px;
-  text-align: center;
-  color: rgb(36, 118, 129);
-}
-
-.nextPlayer {
-  margin-bottom: 40px;
-  text-align: left;
-  color: cadetblue;
-}
-
-.square {
-  background: rgb(112, 109, 109);
-  border: 1px solid #999;
-  float: left;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 50px;
-  height: 50px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 50px;
-}
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: rgb(109, 124, 151);
-}
-
-.game {
+.todo-list {
+  background-color: white;
+  margin: auto;
+  width: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow:
+  /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+      0 10px 0 -5px #eee,
+          /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          /* The third layer */
+      0 20px 0 -10px #eee,
+          /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+  padding: 30px;
 }
 
-.game-info {
-  margin-left: 20px;
+.todo-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
 }
 
+input[type=checkbox] {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}

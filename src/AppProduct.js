@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./components/Header";
-import Product from "./components/Product";
+import Header from "./views/Header";
+import Product from "./views/Product";
 import ProductsData from "./data/ProductsData";
 
 function AppProduct()

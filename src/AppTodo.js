@@ -1,15 +1,25 @@
 import React from "react";
 import TodosData from "./data/TodosData";
-import Todo from "./components/Todo";
+import Todo from "./views/Todo";
 
-function AppTodo(props)
+class AppTodo extends React.Component
 {
-    const todoComponents = TodosData.map(item => <Todo key = {item.id} todo={item}/>)
-    return(
-        <div>
-            {todoComponents}
-        </div>
-    )
+    constructor()
+    {
+        super();
+        this.state = {
+            todosData : TodosData
+        };
+    }
+    render()
+    {
+        const todoComponents = this.state.todosData.map(item => <Todo key = {item.id} todo={item}/>)
+        return(
+            <div>
+                {todoComponents}
+            </div>
+        );
+    }
 }
 
 export default AppTodo

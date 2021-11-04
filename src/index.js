@@ -8,6 +8,7 @@ import AppTodo from './AppTodo';
 import AppCounter from './AppCounter'
 import AppConditional from './AppConditional';
 import AppLogin from './AppLogin';
+import AppApi from './AppApi';
 
 function FnMakeList()
 {
@@ -51,10 +52,11 @@ class Ticker extends React.Component
 //ReactDOM.render(<FnMakeList />, document.getElementById('root'));
 //ReactDOM.render(<AboutMe />, document.getElementById('root'));
 //ReactDOM.render(<AppProduct />, document.getElementById('root'));
-ReactDOM.render(<AppTodo />, document.getElementById('root'));
+//ReactDOM.render(<AppTodo />, document.getElementById('root'));
 //ReactDOM.render(<AppCounter />, document.getElementById('root'));
 //ReactDOM.render(<AppConditional />, document.getElementById('root'));
 //ReactDOM.render(<AppLogin />, document.getElementById('root'));
+ReactDOM.render(<AppApi />, document.getElementById('root'));
 
 
 function tick() 

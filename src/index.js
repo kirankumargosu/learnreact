@@ -10,7 +10,7 @@ import AppConditional from './AppConditional';
 import AppLogin from './AppLogin';
 import AppApi from './AppApi';
 import AppForm from "./AppForm";
-
+import AppTravel from './AppTravel';
 function FnMakeList()
 {
   return(<div>
@@ -58,7 +58,8 @@ class Ticker extends React.Component
 //ReactDOM.render(<AppConditional />, document.getElementById('root'));
 //ReactDOM.render(<AppLogin />, document.getElementById('root'));
 //ReactDOM.render(<AppApi />, document.getElementById('root'));
-ReactDOM.render(<AppForm />, document.getElementById('root'));
+//ReactDOM.render(<AppForm />, document.getElementById('root'));
+ReactDOM.render(<AppTravel />, document.getElementById('root'));
 
 function tick() 
 {

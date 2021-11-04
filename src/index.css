@@ -69,6 +69,7 @@ body {
 .headerBar {
   height: 100px;
   background-color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: whitesmoke;
   margin-bottom: 15px;
   text-align: center;
@@ -81,6 +82,7 @@ body {
 .footerBar {
   height: 30px;
   background-color: rgb(161, 147, 147);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(37, 10, 10);
   margin-bottom: 15px;
   text-align: center;

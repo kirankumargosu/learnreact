@@ -1,4 +1,5 @@
 import React from "react";
+import randomcolor from "randomcolor";
 
 class Counter extends React.Component
 {
@@ -7,7 +8,8 @@ class Counter extends React.Component
     {
         super();
         this.state = {
-            counter: 0
+            counter: 0,
+            color: ""
         };
         this.incrementCount = this.incrementCount.bind(this);
         this.decrementCount = this.decrementCount.bind(this);
@@ -23,11 +25,20 @@ class Counter extends React.Component
         this.setState(prevState => { return { counter: prevState.counter - 1 } })
     }
 
+    componentDidUpdate(prevProps, prevState)
+    {
+        //this.setState(prevState => { return { color: randomcolor()}})
+        if(prevState.counter !== this.state.counter)
+        {
+            this.setState({color: randomcolor()})
+        }
+    }
+
     render()
     {
         return(
             <div className = "counter">
-                <div className = "counterNumber">{this.state.counter}</div>
+                <div style={{color: this.state.color}} className = "counterNumber">{this.state.counter}</div>
                 <button className = "upButton" 
                         onClick={this.incrementCount}>
                     Up!

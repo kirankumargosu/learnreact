@@ -1,3 +1,4 @@
+import { Color, gray } from "jest-matcher-utils/node_modules/chalk";
 import React from "react";
 
 function handleToDoChange()
@@ -5,16 +6,30 @@ function handleToDoChange()
 
 }
 
-function Todo(props)
+class Todo extends React.Component
 {
-    return(
-        <div className="todo-item"> 
-            <input onChange={handleToDoChange} 
-                   type="checkbox" 
-                   checked = {props.todo.completed}/> 
-            <p>{props.todo.text}</p>
-        </div>
-    )
+    constructor(props)
+    {
+        super(props);
+
+        this.state = {
+            statusCompleted: false
+        };
+    }
+
+
+    render()
+    {
+        return(
+            <div className="todo-item"> 
+                <input type = "checkbox" 
+                       checked = {this.props.todo.completed} 
+                       onChange = {() => this.props.handleChange(this.props.todo.id)}
+                /> 
+                <p>{this.props.todo.text}</p>
+            </div>
+        )
+    }
 }
 
 export default Todo

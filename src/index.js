@@ -49,8 +49,8 @@ class Ticker extends React.Component
 //ReactDOM.render(<FnMakeList />, document.getElementById('root'));
 //ReactDOM.render(<AboutMe />, document.getElementById('root'));
 //ReactDOM.render(<AppProduct />, document.getElementById('root'));
-//ReactDOM.render(<AppTodo />, document.getElementById('root'));
-ReactDOM.render(<AppCounter />, document.getElementById('root'));
+ReactDOM.render(<AppTodo />, document.getElementById('root'));
+//ReactDOM.render(<AppCounter />, document.getElementById('root'));
 
 function tick() 
 {

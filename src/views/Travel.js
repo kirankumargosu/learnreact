@@ -5,13 +5,32 @@ class Travel extends React.Component
     constructor(props)
     {
         super(props)
+        this.state = {
+            character: {},
+            isLoading: false
+        };
     }
-
+    componentDidMount()
+    {
+        this.setState({isLoading: true});
+        fetch("https://swapi.dev/api/people/1/")
+            .then(reponse => reponse.json())
+            .then(data => {
+                            //this.setState(() => { return {character: data}})
+                              this.setState(               {character: data,
+                                                            isLoading: false
+                                                           }
+                                           )
+                          }
+                 );
+    }
     render()
     {
         return (
                 <main>
                     <form>
+                        <h2> API Call </h2>
+                        {this.state.isLoading ? <h3>Loading</h3> : <h3>Data from API : {this.state.character.name}</h3>}
                         <input
                             type = "text"
                             name = "firstName"

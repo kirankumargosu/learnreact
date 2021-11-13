@@ -31,6 +31,7 @@ class Travel extends React.Component
                     <form>
                         <h2> API Call </h2>
                         {this.state.isLoading ? <h3>Loading</h3> : <h3>Data from API : {this.state.character.name}</h3>}
+                        {this.state.isLoading ? <h3>Loading</h3> : <h3>Data from API : {this.state.character.name}</h3>}
                         <input
                             type = "text"
                             name = "firstName"

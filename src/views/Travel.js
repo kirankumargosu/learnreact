@@ -13,7 +13,8 @@ class Travel extends React.Component
     componentDidMount()
     {
         this.setState({isLoading: true});
-        fetch("https://swapi.dev/api/people/1/")
+        // fetch("https://swapi.dev/api/people/1/")
+        fetch("https://gosuchatserver.herokuapp.com/api/")
             .then(reponse => reponse.json())
             .then(data => {
                             //this.setState(() => { return {character: data}})
